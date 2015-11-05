@@ -1,6 +1,10 @@
-<h2>Students At This Table</h2>
-<div>
-    <div ng-repeat="student in tablePeople">
-        Numba: {{student.studentNumber}}
+<div class="seatingTable" >
+    <div ng-repeat="student in tablePeople track by $index" class="seat">
+        <button ng-click="select(student, $index)">
+            Numba: {{student.studentNumber}}
+        </button>
+        <button ng-click="select2(student)">
+            Swap
+        </button>
     </div>
 </div>

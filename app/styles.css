@@ -1,0 +1,10 @@
+.seat {
+  padding: 4px;
+  border: 1px solid gray;
+}
+
+.seatingTable{
+  padding:10px;
+  margin:10px;
+    border: 1px solid blue;
+}
